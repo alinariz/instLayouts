@@ -1,0 +1,7 @@
+{
+  "name": "InstLay",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
