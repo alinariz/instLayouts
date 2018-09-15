@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Announcements</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngIf="selectedArticle">
+    <ion-card-header>
+      {{selectedArticle.title}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        {{selectedArticle.date}}
+      </ion-item>
+      <ion-item>
+        {{selectedArticle.article}}
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

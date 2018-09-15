@@ -1,0 +1,61 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>OCAD University</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <!-- Insert non-copyrighted image here -->
+    <ion-card-content>
+
+      <ion-card-title>
+        OCAD University
+      </ion-card-title>
+
+      <p>100 McCaul St., Toronto,</p>
+      <p>Ontario, M5T 1W1</p>
+      <a href="tel:4169776000">(416) 977-6000</a>
+
+      <br><br>
+
+      <p>Website: <a href="http://www.ocadu.ca">ocadu.ca</a></p>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-content>
+        <ion-card-title>
+          Indigenous Centre: Visual Cultural Student Centre
+        </ion-card-title>
+        <p>113 McCaul St., Room 410</p>
+        <br>
+        <p>Contact:</p>
+        <br>
+        <p>Melissa General</p>
+        <p>Phone:<a href="tel:4169776000">(416) 977-6000</a> ext. 2261</p>
+        <p>Email: <a href="mailto:mgeneral@ocadu.ca">mgeneral@ocadu.ca</a></p>
+        <br>
+        <p>Connor Pion</p>
+        <p>Phone:<a href="tel:4169776000">(416) 977-6000</a> ext. 3353</p>
+        <p>Email: <a href="mailto:cpion@ocadu.ca">cpion@ocadu.ca</a></p>
+        <br>
+        <p>Website: <a href="http://www.ocadu.ca/services/indigenous-students.htm">ocadu.ca/services/indigenous-students.htm</a></p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-list *ngFor="let item of items">
+          <button ion-item (click)="itemSelected(item)">
+            <ion-icon name="{{item.symbol}}"></ion-icon>
+            {{item.title}}
+          </button>
+        </ion-list>
+      </ion-card>
+
+</ion-content>

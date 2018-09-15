@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Institutional Resources</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item-group *ngFor="let inResource of inResources">
+    <ion-item-divider>
+      {{inResource.category}}
+    </ion-item-divider>
+    <button ion-item (click)="seeInResource($event, inResource)">
+      {{inResource.title}}
+    </button>
+  </ion-item-group>
+
+</ion-content>

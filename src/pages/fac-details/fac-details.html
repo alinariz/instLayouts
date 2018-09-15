@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Faculty & Staff</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngIf="selectedStaff">
+    <ion-card-header>
+      {{selectedStaff.name}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        {{selectedStaff.dept}}
+      </ion-item>
+      <ion-item>
+        {{selectedStaff.office}}
+      </ion-item>
+      <ion-item>
+        Extension: {{selectedStaff.ext}}
+      </ion-item>
+      <ion-item>
+        {{selectedStaff.email}}
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

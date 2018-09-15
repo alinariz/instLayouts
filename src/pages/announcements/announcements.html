@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Announcements</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h4> Latest News </h4>
+
+  <ion-card *ngFor="let announcement of announcements">
+    <ion-card-header>
+      {{announcement.title}}
+    </ion-card-header>
+    <ion-card-content>
+      {{announcement.date}}
+      <br>
+      {{announcement.article}}
+      <br>
+      <button ion-button (click)="goToArticle($event, announcement)">Keep Reading...</button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

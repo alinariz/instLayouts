@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Edit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h4>Institutional Management Tool</h4>
+  <p> Use this page to customize colours of the app.</p>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon name="brush"></ion-icon>
+      Primary Colour:
+    </ion-item>
+    <button ion-button (click)="setPrimaryRed()">Red</button>
+    <button ion-button (click)="setPrimaryBlue()">Blue</button>
+    <button ion-button (click)="setPrimaryGold()">Gold</button>
+    <button ion-button (click)="setPrimaryGrey()">Grey</button>
+    <button ion-button (click)="setPrimaryWhite()">White</button>
+
+    <ion-item>
+      <ion-icon name="brush"></ion-icon>
+      Secondary Colour:
+    </ion-item>
+    <button ion-button (click)="setSecondaryRed()">Red</button>
+    <button ion-button (click)="setSecondaryBlue()">Blue</button>
+    <button ion-button (click)="setSecondaryGold()">Gold</button>
+    <button ion-button (click)="setSecondaryGrey()">Grey</button>
+    <button ion-button (click)="setSecondaryWhite()">White</button>
+  </ion-list>
+
+</ion-content>

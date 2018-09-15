@@ -3,21 +3,38 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { InstitutionsPage } from '../pages/institutions/institutions';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { EditPage } from '../pages/edit/edit';
+import { OcadprofilePage } from '../pages/ocadprofile/ocadprofile';
+import { RyersonprofilePage } from '../pages/ryersonprofile/ryersonprofile';
+import { YorkprofilePage } from '../pages/yorkprofile/yorkprofile';
+import { InstResPage } from '../pages/inst-res/inst-res';
+import { InstResDetailsPage } from '../pages/inst-res-details/inst-res-details';
+import { FacultyPage } from '../pages/faculty/faculty';
+import { FacDetailsPage } from '../pages/fac-details/fac-details';
+import { AnnouncementsPage } from '../pages/announcements/announcements';
+import { AnnounceDetailsPage } from '../pages/announce-details/announce-details';
+import { ThemeSettingsProvider } from '../providers/theme-settings/theme-settings';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    InstitutionsPage,
+    TabsPage,
+    EditPage,
+    OcadprofilePage,
+    RyersonprofilePage,
+    YorkprofilePage,
+    InstResPage,
+    InstResDetailsPage,
+    FacultyPage,
+    FacDetailsPage,
+    AnnouncementsPage,
+    AnnounceDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -26,15 +43,24 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    InstitutionsPage,
+    TabsPage,
+    EditPage,
+    OcadprofilePage,
+    RyersonprofilePage,
+    YorkprofilePage,
+    InstResPage,
+    InstResDetailsPage,
+    FacultyPage,
+    FacDetailsPage,
+    AnnouncementsPage,
+    AnnounceDetailsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ThemeSettingsProvider
   ]
 })
 export class AppModule {}

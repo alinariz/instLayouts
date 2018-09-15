@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ryerson University</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <!-- Insert non-copyrighted image here -->
+    <ion-card-content>
+
+      <ion-card-title>
+        Ryerson University
+      </ion-card-title>
+
+      <p>350 Victoria St., Toronto,</p>
+      <p>Ontario, M5B 2K3</p>
+      <a href="tel:4169795000">(416) 979-5000</a>
+
+      <br><br>
+
+      <p>Website: <a href="http://www.ryerson.ca">ryerson.ca</a></p>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>Indigenous Centre: Ryerson Aboriginal Student Services</ion-card-title>
+      <p>379 Victoria St., Room 389</p>
+      <br>
+      <p>Peer Support:</p>
+      <p>Phone:<a href="tel:4169795000">(416) 979-5000</a> ext. 6660</p>
+      <p>Email: <a href="mailto:bnorton@ryerson.ca">bnorton@ryerson.ca</a></p>
+      <br>
+      <p>Website: <a href="http://www.ryerson.ca/aboriginal">ryerson.ca/aboriginal</a></p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-list *ngFor="let item of items">
+      <button ion-item (click)="itemSelected(item)">
+        <ion-icon name="{{item.symbol}}"></ion-icon>
+        {{item.title}}
+      </button>
+    </ion-list>
+  </ion-card>
+
+</ion-content>

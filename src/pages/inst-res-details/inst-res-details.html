@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Institutional Resources</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card *ngIf="selectedInResource">
+        <ion-card-header>
+          {{selectedInResource.title}}
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            {{selectedInResource.content}}
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+
+</ion-content>

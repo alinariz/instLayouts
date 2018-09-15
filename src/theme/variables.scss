@@ -33,12 +33,88 @@ $app-direction: ltr;
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 
+// different primary colours
+.primaryRed {
+  .toolbar-background {
+    background-color: #e74c3c;
+  }
+  .toolbar-title {
+    color: #fff
+  }
+}
+.primaryBlue {
+  .toolbar-background {
+    background-color: #004c9b;
+  }
+  .toolbar-title {
+    color: #fff
+  }
+}
+.primaryGold {
+  .toolbar-background {
+    background-color: #ffdc00;
+  }
+}
+.primaryGrey {
+  .toolbar-background {
+    background-color: #bfbfbf;
+  }
+}
+.primaryWhite {
+  .toolbar-background {
+    background-color: #ffffff;
+  }
+}
+
+// different secondary colours
+.secondaryRed {
+  ion-content {
+    background-color: #e74c3c;
+  }
+  button {
+    border: #fff;
+  }
+}
+.secondaryBlue {
+  ion-content {
+    background-color: #004c9b;
+  }
+  button {
+    border: #fff;
+  }
+}
+.secondaryGold {
+  ion-content {
+    background-color: #ffdc00;
+  }
+}
+.secondaryGrey {
+  ion-content {
+    background-color: #bfbfbf;
+  }
+}
+.secondaryWhite {
+  ion-content {
+    background-color: #ffffff;
+  }
+}
+
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #e74c3c,
+  secondary:  #fff,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  energized:  #ffc527,
+  royal:      #3498db,
+  subtle:     #444444,
+  vibrant:    rebeccapurple,
+  bright:     #ffc125,
+  navheader: #505050,
+  navcontent: #505050,
+  ltgrey: #ecf0f1,
+  greenb: #2ecc71,
+  grey: #8C8C9C
 );
 
 

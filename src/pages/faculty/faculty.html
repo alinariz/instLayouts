@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Faculty & Staff</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item-group *ngFor="let staff of staffs">
+    <ion-item-divider>
+      {{staff.letter}}
+    </ion-item-divider>
+    <button ion-item (click)="seeStaffDetails($event, staff)">
+      {{staff.name}}
+    </button>
+  </ion-item-group>
+
+</ion-content>
