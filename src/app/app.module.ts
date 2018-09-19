@@ -8,7 +8,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { EditPage } from '../pages/edit/edit';
+import { InstitutioneditPage } from '../pages/institutionedit/institutionedit';
+import { InstitutionProfilePage } from '../pages/institution-profile/institution-profile';
 import { OcadprofilePage } from '../pages/ocadprofile/ocadprofile';
 import { RyersonprofilePage } from '../pages/ryersonprofile/ryersonprofile';
 import { YorkprofilePage } from '../pages/yorkprofile/yorkprofile';
@@ -25,7 +26,8 @@ import { ThemeSettingsProvider } from '../providers/theme-settings/theme-setting
     MyApp,
     InstitutionsPage,
     TabsPage,
-    EditPage,
+    InstitutioneditPage,
+    InstitutionProfilePage,
     OcadprofilePage,
     RyersonprofilePage,
     YorkprofilePage,
@@ -45,7 +47,8 @@ import { ThemeSettingsProvider } from '../providers/theme-settings/theme-setting
     MyApp,
     InstitutionsPage,
     TabsPage,
-    EditPage,
+    InstitutioneditPage,
+    InstitutionProfilePage,
     OcadprofilePage,
     RyersonprofilePage,
     YorkprofilePage,
