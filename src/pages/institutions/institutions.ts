@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { EditPage } from '../edit/edit';
 import { OcadprofilePage } from '../ocadprofile/ocadprofile';
 import { RyersonprofilePage } from '../ryersonprofile/ryersonprofile';
 import { YorkprofilePage } from '../yorkprofile/yorkprofile';
+// import { InstitutionProfilePage } from '../institution-profile/institution-profile';
 
 @Component({
   selector: 'page-institutions',
@@ -41,8 +41,12 @@ export class InstitutionsPage {
     this.navCtrl.push(inst.instPage);
   }
 
-  goToEditPage() {
-    this.navCtrl.push(EditPage);
-  }
+  // This function populates InstitutionProfilePage with data from Parse/Firebase
+  // about the selected institute; replaces goToInstProfile function
+  // goToInstPage(event, institute) {
+  //   this.navCtrl.push(InstitutionProfilePage, {
+  //     institute : institute
+  //   });
+  // }
 
 }
